@@ -49,4 +49,10 @@ extension DetailsPresenter : DetailInteractorToPresenterProtocol {
     func detailResultData(data: MovieDetail) {
         movieDetail = data
     }
+    
+    func movieFetchFailedWithError(errorString:String) {
+        movieDetail = nil
+        _view?.refreshMovieData()
+        _router?.showAlertPopup(with: errorString, title: AlertConstants.alertTitle, successButtonTitle: AlertConstants.alertTitle)
+    }
 }

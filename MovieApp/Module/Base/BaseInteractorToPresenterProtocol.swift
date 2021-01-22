@@ -1,10 +1,9 @@
 //
 //  BaseInteractorToPresenterProtocol.swift
-//  ToolTracking
+//  MovieApp
 //
-//  Created by User on 12/27/20.
+//  Created by User on 1/22/21.
 //
-
 import Foundation
 
 protocol BaseInteractorToPresenterProtocol:class {

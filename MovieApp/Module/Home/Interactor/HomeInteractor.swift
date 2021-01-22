@@ -6,13 +6,11 @@ import Foundation
 import UIKit
 
 class HomeInteractor: HomePresenterToInteractorProtocol {
-    
-    
     var presenter: HomeInteractorToPresenterProtocol?
     private var defaultSession:DHURLSession = URLSession(configuration: .default)
     private var dataTask: URLSessionDataTask?
     
-    //MARK:- Get All tools
+    //MARK:- Get All Movies
     /* To Get All the Movie list based on search Keyword
             result is passing to Presenter
             If no movies inserted empty Array will pass to Presenter

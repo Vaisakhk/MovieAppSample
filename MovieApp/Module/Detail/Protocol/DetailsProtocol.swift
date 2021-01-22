@@ -28,4 +28,5 @@ protocol DetailPresenterToInteractorProtocol: BaseInteractorProtocol {
 
 protocol DetailInteractorToPresenterProtocol: BaseInteractorToPresenterProtocol {
     func detailResultData(data:MovieDetail)
+    func movieFetchFailedWithError(errorString:String)
 }

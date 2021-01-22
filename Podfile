@@ -8,5 +8,5 @@ target 'MovieApp' do
   # Pods for MovieApp
   platform :ios, '8.0'
   pod 'SDWebImage', '~> 5.0'
-
+  pod 'PKHUD', '~> 5.0'
 end

@@ -19,7 +19,6 @@ struct MovieList: Codable {
     }
 }
 
-
 // MARK: - Result
 struct Movie: Codable {
     let title, year, imdbID,type,poster: String

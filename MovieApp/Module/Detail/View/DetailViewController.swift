@@ -31,6 +31,7 @@ class DetailViewController: UIViewController {
     //MARK:- UIView Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         showSpinner ()
         presenter?.viewDidLoad()
     }

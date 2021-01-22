@@ -9,7 +9,6 @@ import UIKit
 protocol DetailViewToPresenterProtocol: BasePresenterProtocal{
     var imdbId: String? {get}
     var movieDetail: MovieDetail? { get }
-    func fetchMovieDetails()
 }
 
 protocol DetailPresenterToViewProtocol: BaseViewProtocol{

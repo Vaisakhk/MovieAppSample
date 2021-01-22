@@ -24,10 +24,6 @@ class DetailsPresenter: DetailViewToPresenterProtocol {
         }
     }
     
-    func fetchMovieDetails() {
-        
-    }
-    
     //MARK:- Initialization
     init(router: DetailPresenterToRouterProtocol, view: DetailPresenterToViewProtocol, interactor: DetailPresenterToInteractorProtocol,imdbIdValue:String) {
         _view = view

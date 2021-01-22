@@ -8,6 +8,7 @@ class HomePresenter: HomeViewToPresenterProtocol {
     private var _view: HomePresenterToViewProtocol?
     private var _interactor: HomePresenterToInteractorProtocol?
     private var _router: HomePresenterToRouterProtocol?
+    
     var currentPage: Int?
     private var totalPage:Int = 0
     private var tempSearchKeyword = ""
@@ -39,10 +40,11 @@ class HomePresenter: HomeViewToPresenterProtocol {
         _interactor = interactor
     }
     
-    //MARK:- Called when view will appear called from controller
+    //MARK:- Called when view did load is called from controller
     func viewDidLoad() {
     }
     
+    //MARK:- TO Get Movies from Api
     private func fetchMovie() {
         _interactor?.getMovieData(with: currentKeyWord ?? "", for: currentPage ?? 1)
     }

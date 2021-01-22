@@ -19,17 +19,14 @@ protocol HomePresenterToViewProtocol: BaseViewProtocol{
 
 protocol HomePresenterToRouterProtocol: RouterProtocal {
     func pushToDetailScreen(movieID:String)
-//    func showLoaningPopup(successBlock:@escaping (_ isSuccess:Bool,_ enteredText:String) -> Void)
 }
 
 protocol HomePresenterToInteractorProtocol: BaseInteractorProtocol {
     var presenter:HomeInteractorToPresenterProtocol? {get set}
     func getMovieData(with searchText:String, for page:Int)
-//    func insertBorrowerData(name:String,selectedTool:Tools, indexValue:Int)
 }
 
 protocol HomeInteractorToPresenterProtocol: BaseInteractorToPresenterProtocol {
     func movieResultData(data:MovieList)
-//    func borrowCompletedWithSuccess(data:Tools,index:Int)
     func movieFetchFailedWithError(errorString:String)
 }

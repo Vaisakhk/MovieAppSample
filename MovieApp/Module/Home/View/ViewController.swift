@@ -40,34 +40,17 @@ extension ViewController : UISearchBarDelegate {
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-//        presenter?.currentKeyWord = searchBar.text
-//        if(searchBar.text?.count == 0) {
-//            populateData()
-//        }
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.view.endEditing(true)
         presenter?.currentKeyWord = searchBar.text
-//        if(searchBar.text?.count == 0) {
-//            populateData()
-//        }else {
-//            showProgressView()
-//            presenter?.startSearchingData(searchString: searchBar.text ?? "")
-//        }
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        presenter?.currentKeyWord = searchBar.text
-//        if(searchBar.text?.count == 0) {
-//            populateData()
-//            self.view.endEditing(true)
-//        }else {
-//
-//        }
     }
 }
 
-//MARK:- UICOllection View Data source and Delegate
+//MARK:- UICollection View Data source and Delegate
 extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource , UICollectionViewDataSourcePrefetching,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
     }

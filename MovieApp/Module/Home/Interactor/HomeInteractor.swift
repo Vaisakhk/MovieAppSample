@@ -26,7 +26,6 @@ class HomeInteractor: HomePresenterToInteractorProtocol {
         dataTask?.cancel()
         //http://www.omdbapi.com/?apikey=b9bd48a6&s=abcd&type=movie&page=2
         let queryString = String(format: "%@apikey=%@&s=%@&type=movie&page=%@",MOVIEAPI.BASEURL,MOVIEAPI.MOVIEKEY ,searchTerm, index)
-        print(queryString)
         guard let url = URL(string: queryString) else {
             return
         }

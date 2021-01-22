@@ -18,7 +18,7 @@ protocol HomePresenterToViewProtocol: BaseViewProtocol{
 }
 
 protocol HomePresenterToRouterProtocol: RouterProtocal {
-    func pushToDetailScreen()
+    func pushToDetailScreen(movieID:String)
 //    func showLoaningPopup(successBlock:@escaping (_ isSuccess:Bool,_ enteredText:String) -> Void)
 }
 

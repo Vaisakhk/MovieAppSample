@@ -17,16 +17,17 @@ final class HomeRouter: BaseRouter {
     }
     
     //MARK:- Navigate to Friends list
-    private func navigateToFriendsDetail() {
-//        let controller = FriendsRouter()
-//        viewController.presentRouter(controller, presentationStyle: .fullScreen)
+    private func navigateToFriendsDetail(idString:String) {
+        let controller = DetailsRouter(idString)
+        navigationController?.pushRouter(controller, animated: true)
+       // viewController.presentRouter(controller, presentationStyle: .fullScreen)
     }
 }
 
 //MARK:- Home Presenter To Router Protocol
 extension HomeRouter: HomePresenterToRouterProtocol {
-    func pushToDetailScreen() {
-        navigateToFriendsDetail()
+    func pushToDetailScreen(movieID:String) {
+        navigateToFriendsDetail(idString:movieID)
     }
     
 //    func showLoaningPopup(successBlock:@escaping (_ isSuccess:Bool,_ enteredText:String) -> Void) {

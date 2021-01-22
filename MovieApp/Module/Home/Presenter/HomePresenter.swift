@@ -41,7 +41,6 @@ class HomePresenter: HomeViewToPresenterProtocol {
     
     //MARK:- Called when view will appear called from controller
     func viewDidLoad() {
-        fetchMovie()
     }
     
     private func fetchMovie() {
@@ -50,7 +49,10 @@ class HomePresenter: HomeViewToPresenterProtocol {
     
     //MARK:- Route to Detail Screen
     func didClickMovies(for index: Int) {
-        _router?.pushToDetailScreen()
+        guard let movie =  movieList?[index] else {
+            return
+        }
+        _router?.pushToDetailScreen(movieID: movie.imdbID)
     }
     
     //MARK:- Reach bottom of the scroll

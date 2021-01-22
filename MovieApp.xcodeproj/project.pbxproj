@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEA0830E25BA8E3000ED75C7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0830425BA8E2F00ED75C7 /* DetailViewController.swift */; };
+		CEA0830F25BA8E3000ED75C7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA0830525BA8E2F00ED75C7 /* DetailViewController.xib */; };
+		CEA0831025BA8E3000ED75C7 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0830725BA8E2F00ED75C7 /* DetailsInteractor.swift */; };
+		CEA0831125BA8E3000ED75C7 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0830925BA8E2F00ED75C7 /* DetailsPresenter.swift */; };
+		CEA0831225BA8E3000ED75C7 /* DetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0830B25BA8E2F00ED75C7 /* DetailsProtocol.swift */; };
+		CEA0831325BA8E3000ED75C7 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0830D25BA8E2F00ED75C7 /* DetailsRouter.swift */; };
+		CEA0831725BA8E9B00ED75C7 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0831625BA8E9B00ED75C7 /* MovieDetail.swift */; };
 		CEA9B41D25B9BFF7000EF11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9B41325B9BFF7000EF11B /* Assets.xcassets */; };
 		CEA9B41E25B9BFF7000EF11B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9B41425B9BFF7000EF11B /* LaunchScreen.storyboard */; };
 		CEA9B41F25B9BFF7000EF11B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9B41625B9BFF7000EF11B /* Main.storyboard */; };
@@ -21,8 +28,6 @@
 		CEA9B44325BA3F54000EF11B /* BaseInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9B43E25BA3F54000EF11B /* BaseInteractorProtocol.swift */; };
 		CEA9B44425BA3F54000EF11B /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9B43F25BA3F54000EF11B /* BaseViewProtocol.swift */; };
 		CEA9B47F25BA41B3000EF11B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9B47E25BA41B3000EF11B /* HomeRouter.swift */; };
-		CEA9B48325BA41CA000EF11B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9B48125BA41CA000EF11B /* DetailViewController.swift */; };
-		CEA9B48425BA41CA000EF11B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA9B48225BA41CA000EF11B /* DetailViewController.xib */; };
 		CEA9B48725BA422D000EF11B /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9B48625BA422D000EF11B /* HomeProtocol.swift */; };
 		CEA9B48A25BA4236000EF11B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9B48925BA4235000EF11B /* HomePresenter.swift */; };
 		CEA9B48D25BA4246000EF11B /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA9B48C25BA4246000EF11B /* HomeInteractor.swift */; };
@@ -34,6 +39,13 @@
 
 /* Begin PBXFileReference section */
 		6B368A13F90DED6F58A16564 /* Pods-MovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.release.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.release.xcconfig"; sourceTree = "<group>"; };
+		CEA0830425BA8E2F00ED75C7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CEA0830525BA8E2F00ED75C7 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		CEA0830725BA8E2F00ED75C7 /* DetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		CEA0830925BA8E2F00ED75C7 /* DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		CEA0830B25BA8E2F00ED75C7 /* DetailsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsProtocol.swift; sourceTree = "<group>"; };
+		CEA0830D25BA8E2F00ED75C7 /* DetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		CEA0831625BA8E9B00ED75C7 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		CEA9B3F025B9BF77000EF11B /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9B40125B9BF7B000EF11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA9B41325B9BFF7000EF11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,8 +62,6 @@
 		CEA9B43E25BA3F54000EF11B /* BaseInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractorProtocol.swift; sourceTree = "<group>"; };
 		CEA9B43F25BA3F54000EF11B /* BaseViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
 		CEA9B47E25BA41B3000EF11B /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		CEA9B48125BA41CA000EF11B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		CEA9B48225BA41CA000EF11B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		CEA9B48625BA422D000EF11B /* HomeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
 		CEA9B48925BA4235000EF11B /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		CEA9B48C25BA4246000EF11B /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -80,7 +90,6 @@
 				DC3550BC8FD32221B0BCB408 /* Pods-MovieApp.debug.xcconfig */,
 				6B368A13F90DED6F58A16564 /* Pods-MovieApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -90,6 +99,55 @@
 				F37436CEF7DB8A513230623D /* Pods_MovieApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEA0830325BA8E2F00ED75C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0830425BA8E2F00ED75C7 /* DetailViewController.swift */,
+				CEA0830525BA8E2F00ED75C7 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA0830625BA8E2F00ED75C7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0830725BA8E2F00ED75C7 /* DetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CEA0830825BA8E2F00ED75C7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0830925BA8E2F00ED75C7 /* DetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEA0830A25BA8E2F00ED75C7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0830B25BA8E2F00ED75C7 /* DetailsProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CEA0830C25BA8E2F00ED75C7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0830D25BA8E2F00ED75C7 /* DetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CEA0831525BA8E9100ED75C7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0831625BA8E9B00ED75C7 /* MovieDetail.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		CEA9B3E725B9BF77000EF11B = {
@@ -154,50 +212,14 @@
 		CEA9B42525B9C060000EF11B /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				CEA9B42625B9C060000EF11B /* Presenter */,
-				CEA9B42725B9C060000EF11B /* Protocol */,
-				CEA9B42825B9C060000EF11B /* View */,
-				CEA9B42925B9C060000EF11B /* Interactor */,
-				CEA9B42A25B9C060000EF11B /* Router */,
+				CEA0831525BA8E9100ED75C7 /* Entity */,
+				CEA0830625BA8E2F00ED75C7 /* Interactor */,
+				CEA0830825BA8E2F00ED75C7 /* Presenter */,
+				CEA0830A25BA8E2F00ED75C7 /* Protocol */,
+				CEA0830C25BA8E2F00ED75C7 /* Router */,
+				CEA0830325BA8E2F00ED75C7 /* View */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		CEA9B42625B9C060000EF11B /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		CEA9B42725B9C060000EF11B /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		CEA9B42825B9C060000EF11B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CEA9B48125BA41CA000EF11B /* DetailViewController.swift */,
-				CEA9B48225BA41CA000EF11B /* DetailViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CEA9B42925B9C060000EF11B /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		CEA9B42A25B9C060000EF11B /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		CEA9B42B25B9C060000EF11B /* Home */ = {
@@ -345,7 +367,7 @@
 			files = (
 				CEA9B41F25B9BFF7000EF11B /* Main.storyboard in Resources */,
 				CEA9B41D25B9BFF7000EF11B /* Assets.xcassets in Resources */,
-				CEA9B48425BA41CA000EF11B /* DetailViewController.xib in Resources */,
+				CEA0830F25BA8E3000ED75C7 /* DetailViewController.xib in Resources */,
 				CEA9B41E25B9BFF7000EF11B /* LaunchScreen.storyboard in Resources */,
 				CEA9B43825BA3922000EF11B /* HomeCollectionViewCell.xib in Resources */,
 			);
@@ -400,23 +422,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA9B48325BA41CA000EF11B /* DetailViewController.swift in Sources */,
 				CEA9B43225B9C061000EF11B /* ViewController.swift in Sources */,
+				CEA0831025BA8E3000ED75C7 /* DetailsInteractor.swift in Sources */,
+				CEA0830E25BA8E3000ED75C7 /* DetailViewController.swift in Sources */,
 				CEA9B44125BA3F54000EF11B /* BasePresenter.swift in Sources */,
 				CEA9B44225BA3F54000EF11B /* BaseRouter.swift in Sources */,
 				CEA9B48725BA422D000EF11B /* HomeProtocol.swift in Sources */,
 				CEA9B42125B9BFF7000EF11B /* AppDelegate.swift in Sources */,
 				CEA9B42225B9BFF7000EF11B /* SceneDelegate.swift in Sources */,
 				CEA9B49525BA4750000EF11B /* Constants.swift in Sources */,
+				CEA0831125BA8E3000ED75C7 /* DetailsPresenter.swift in Sources */,
 				CEA9B49B25BA50C4000EF11B /* URLSessionHandler.swift in Sources */,
 				CEA9B44425BA3F54000EF11B /* BaseViewProtocol.swift in Sources */,
 				CEA9B43725BA3922000EF11B /* HomeCollectionViewCell.swift in Sources */,
+				CEA0831325BA8E3000ED75C7 /* DetailsRouter.swift in Sources */,
 				CEA9B48A25BA4236000EF11B /* HomePresenter.swift in Sources */,
 				CEA9B44025BA3F54000EF11B /* BaseInteractorToPresenterProtocol.swift in Sources */,
 				CEA9B44325BA3F54000EF11B /* BaseInteractorProtocol.swift in Sources */,
+				CEA0831225BA8E3000ED75C7 /* DetailsProtocol.swift in Sources */,
 				CEA9B47F25BA41B3000EF11B /* HomeRouter.swift in Sources */,
 				CEA9B48D25BA4246000EF11B /* HomeInteractor.swift in Sources */,
 				CEA9B49125BA45F4000EF11B /* Movie.swift in Sources */,
+				CEA0831725BA8E9B00ED75C7 /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

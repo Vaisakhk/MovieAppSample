@@ -10,38 +10,36 @@ import PKHUD
 import SDWebImage
 
 class DetailViewController: UIViewController {
-    @IBOutlet weak var movieNameLabel: UILabel!
-    @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var titleView: UIView!
-    @IBOutlet weak var RatingsView: UIView!
-    @IBOutlet weak var ratingsLabel: UILabel!
-    @IBOutlet weak var movieTypeLabel: UILabel!
-    @IBOutlet weak var runTImeLabel: UILabel!
-    @IBOutlet weak var releasedOnLabel: UILabel!
-    
-    @IBOutlet weak var synopsisView: UIView!
-    
-    @IBOutlet weak var synopsysLabel: UILabel!
     var presenter:DetailViewToPresenterProtocol?
-    
-    @IBOutlet weak var directorView: UIView!
-    @IBOutlet weak var directorLabel: UILabel!
-    @IBOutlet weak var writerView: UIView!
-    @IBOutlet weak var writerLabel: UILabel!
     @IBOutlet weak var actorView: UIView!
+    @IBOutlet weak var titleView: UIView!
+    @IBOutlet weak var writerView: UIView!
+    @IBOutlet weak var RatingsView: UIView!
     @IBOutlet weak var actorLabel: UILabel!
-    
+    @IBOutlet weak var synopsisView: UIView!
+    @IBOutlet weak var writerLabel: UILabel!
+    @IBOutlet weak var directorView: UIView!
+    @IBOutlet weak var ratingsLabel: UILabel!
+    @IBOutlet weak var runTImeLabel: UILabel!
+    @IBOutlet weak var directorLabel: UILabel!
+    @IBOutlet weak var synopsysLabel: UILabel!
+    @IBOutlet weak var movieNameLabel: UILabel!
+    @IBOutlet weak var movieTypeLabel: UILabel!
+    @IBOutlet weak var releasedOnLabel: UILabel!
+    @IBOutlet weak var posterImageView: UIImageView!
+
+    //MARK:- UIView Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         showSpinner ()
         presenter?.viewDidLoad()
     }
-
 }
 
 //MARK:- Detail Presenter To view Protocol
 extension DetailViewController : DetailPresenterToViewProtocol {
     
+    //MARK:- Movie Detail Api result
     func refreshMovieData() {
         hideSpinner()
         unHideAllViews()

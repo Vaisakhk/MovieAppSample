@@ -7,7 +7,7 @@ import UIKit
 
 class HomeInteractor: HomePresenterToInteractorProtocol {
     var presenter: HomeInteractorToPresenterProtocol?
-    private var defaultSession:DHURLSession = URLSession(configuration: .default)
+    var defaultSession:DHURLSession = URLSession(configuration: .default)
     private var dataTask: URLSessionDataTask?
     
     //MARK:- Get All Movies

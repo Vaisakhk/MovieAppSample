@@ -23,11 +23,5 @@ struct AlertConstants {
     static let closeButtonTitle = "Close"
     static let cancelButtonTitle = "Cancel"
     static let alertTitle = "Movie App"
-    static let enterNamePlaceHolder = "Enter friend name"
-    static let emptyFriendsName = "Friends name should not be empty."
-    static let borrowedAll = "Already borrowed all the items"
-    static let returnedAllMessage = "User returned all the loaned items"
-    static let enterName = "Hi, Dominic Toretto \n Please enter Friends name."
-    static let returnItemMessage = "Hi, Dominic Toretto \n Do you want to return one item?."
 }
 

@@ -20,7 +20,6 @@ class DetailsInteractor: DetailPresenterToInteractorProtocol {
             movieID: Movie IMDB iD
      */
     func getDetailsData(for movieID: String) {
-        //http://www.omdbapi.com/?apikey=b9bd48a6&i=tt0281534
         dataTask?.cancel()
         let queryString = String(format: "%@apikey=%@&i=%@",MOVIEAPI.BASEURL,MOVIEAPI.MOVIEKEY,movieID)
         print(queryString)

@@ -22,19 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navigationController.setRootWireframe(HomeRouter())
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        setupNavigationBarAppearance()
         self.window = window
-    }
-
-    //MARK:- Customize Navigation Bar Appearence
-    func setupNavigationBarAppearance() {
-        UINavigationBar.appearance().barTintColor = UIColor(named: "NavigationColor")
-        UINavigationBar.appearance().tintColor = .black
-        UINavigationBar.appearance().isTranslucent = true
-        let navbarTitleAtt = [
-            NSAttributedString.Key.foregroundColor: UIColor.white
-        ]
-        UINavigationBar.appearance().titleTextAttributes = navbarTitleAtt
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

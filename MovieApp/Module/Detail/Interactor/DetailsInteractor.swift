@@ -22,7 +22,6 @@ class DetailsInteractor: DetailPresenterToInteractorProtocol {
     func getDetailsData(for movieID: String) {
         dataTask?.cancel()
         let queryString = String(format: "%@apikey=%@&i=%@",MOVIEAPI.BASEURL,MOVIEAPI.MOVIEKEY,movieID)
-        print(queryString)
         guard let url = URL(string: queryString) else {
             return
         }

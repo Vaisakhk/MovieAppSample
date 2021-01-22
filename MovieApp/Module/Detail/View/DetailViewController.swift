@@ -17,7 +17,19 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var ratingsLabel: UILabel!
     @IBOutlet weak var movieTypeLabel: UILabel!
     @IBOutlet weak var runTImeLabel: UILabel!
+    @IBOutlet weak var releasedOnLabel: UILabel!
+    
+    @IBOutlet weak var synopsisView: UIView!
+    
+    @IBOutlet weak var synopsysLabel: UILabel!
     var presenter:DetailViewToPresenterProtocol?
+    
+    @IBOutlet weak var directorView: UIView!
+    @IBOutlet weak var directorLabel: UILabel!
+    @IBOutlet weak var writerView: UIView!
+    @IBOutlet weak var writerLabel: UILabel!
+    @IBOutlet weak var actorView: UIView!
+    @IBOutlet weak var actorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +52,11 @@ extension DetailViewController : DetailPresenterToViewProtocol {
             runTImeLabel.text = movieDetail.runtime
             movieTypeLabel.text = movieDetail.genre
             ratingsLabel.text = movieDetail.imdbRating
+            releasedOnLabel.text = "Release on " + movieDetail.released
+            synopsysLabel.text = movieDetail.plot
+            directorLabel.text = movieDetail.director
+            writerLabel.text = movieDetail.writer
+            actorLabel.text = movieDetail.actors
         }else {
             hideSpinner()
         }
@@ -49,6 +66,10 @@ extension DetailViewController : DetailPresenterToViewProtocol {
         posterImageView.isHidden = false
         titleView.isHidden = false
         RatingsView.isHidden = false
+        synopsisView.isHidden = false
+        directorView.isHidden = false
+        writerView.isHidden = false
+        actorView.isHidden = false
     }
 }
 

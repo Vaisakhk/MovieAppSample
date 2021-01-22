@@ -17,6 +17,8 @@
 		CEA0832925BAB31C00ED75C7 /* MovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0832825BAB31C00ED75C7 /* MovieAppTests.swift */; };
 		CEA0833325BAB35E00ED75C7 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0833225BAB35E00ED75C7 /* HomeInteractorTests.swift */; };
 		CEA0833925BAB80400ED75C7 /* MovieSample.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA0833825BAB80400ED75C7 /* MovieSample.json */; };
+		CEA0833F25BABC0700ED75C7 /* DetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0833E25BABC0700ED75C7 /* DetailsInteractorTests.swift */; };
+		CEA0834325BABCF400ED75C7 /* MovieDeatilSample.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA0834225BABCF400ED75C7 /* MovieDeatilSample.json */; };
 		CEA9B41D25B9BFF7000EF11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA9B41325B9BFF7000EF11B /* Assets.xcassets */; };
 		CEA9B41E25B9BFF7000EF11B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9B41425B9BFF7000EF11B /* LaunchScreen.storyboard */; };
 		CEA9B41F25B9BFF7000EF11B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA9B41625B9BFF7000EF11B /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 		CEA0832A25BAB31C00ED75C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA0833225BAB35E00ED75C7 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
 		CEA0833825BAB80400ED75C7 /* MovieSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieSample.json; sourceTree = "<group>"; };
+		CEA0833E25BABC0700ED75C7 /* DetailsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractorTests.swift; sourceTree = "<group>"; };
+		CEA0834225BABCF400ED75C7 /* MovieDeatilSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieDeatilSample.json; sourceTree = "<group>"; };
 		CEA9B3F025B9BF77000EF11B /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9B40125B9BF7B000EF11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA9B41325B9BFF7000EF11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,9 +182,11 @@
 		CEA0832725BAB31C00ED75C7 /* MovieAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEA0834225BABCF400ED75C7 /* MovieDeatilSample.json */,
 				CEA0833825BAB80400ED75C7 /* MovieSample.json */,
 				CEA0832825BAB31C00ED75C7 /* MovieAppTests.swift */,
 				CEA0833225BAB35E00ED75C7 /* HomeInteractorTests.swift */,
+				CEA0833E25BABC0700ED75C7 /* DetailsInteractorTests.swift */,
 				CEA0832A25BAB31C00ED75C7 /* Info.plist */,
 			);
 			path = MovieAppTests;
@@ -427,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA0833925BAB80400ED75C7 /* MovieSample.json in Resources */,
+				CEA0834325BABCF400ED75C7 /* MovieDeatilSample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +500,7 @@
 			files = (
 				CEA0832925BAB31C00ED75C7 /* MovieAppTests.swift in Sources */,
 				CEA0833325BAB35E00ED75C7 /* HomeInteractorTests.swift in Sources */,
+				CEA0833F25BABC0700ED75C7 /* DetailsInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

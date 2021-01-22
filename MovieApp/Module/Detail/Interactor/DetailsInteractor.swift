@@ -9,7 +9,7 @@ import UIKit
 
 class DetailsInteractor: DetailPresenterToInteractorProtocol {
 
-    private var defaultSession:DHURLSession = URLSession(configuration: .default)
+    var defaultSession:DHURLSession = URLSession(configuration: .default)
     private var dataTask: URLSessionDataTask?
     var presenter: DetailInteractorToPresenterProtocol?
     

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         
         presenter?.viewDidLoad()
         customizeCell()
+        title = "Movie App"
     }
 }
 
@@ -69,12 +70,14 @@ extension ViewController : UISearchBarDelegate {
 //MARK:- UICOllection View Data source and Delegate
 extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource , UICollectionViewDataSourcePrefetching,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
-        if let data = indexPaths.last {
-            if (data.item == (presenter?.movieList?.count ?? 0) - 1) {
-               
-            }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == (presenter?.movieList?.count ?? 0)-1 {
+            presenter?.reachedBottomOftheScroll()
         }
     }
+
     func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
         
     }

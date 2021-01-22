@@ -10,11 +10,17 @@ class HomePresenter: HomeViewToPresenterProtocol {
     private var _router: HomePresenterToRouterProtocol?
     var currentPage: Int?
     private var totalPage:Int = 0
+    private var tempSearchKeyword = ""
     var currentKeyWord: String? {
         didSet {
             if(currentKeyWord?.count != 0) {
+                if(tempSearchKeyword != (currentKeyWord ?? "")) {
+                    movieList = []
+                    currentPage = 1
+                }
                 fetchMovie()
             }else {
+                tempSearchKeyword = currentKeyWord ?? ""
                 movieList = []
             }
         }
@@ -47,15 +53,17 @@ class HomePresenter: HomeViewToPresenterProtocol {
         _router?.pushToDetailScreen()
     }
     
+    //MARK:- Reach bottom of the scroll
     func reachedBottomOftheScroll() {
         currentPage = (currentPage ?? 0) + 1
+        fetchMovie()
     }
 }
 
 //MARK:- Interactor to presenter Protocols
 extension HomePresenter : HomeInteractorToPresenterProtocol {
     func movieResultData(data: MovieList) {
-        movieList = data.result
+        movieList?.append(contentsOf: data.result)
         if(data.result.count == 0) {
             totalPage = 1
             _router?.showAlertPopup(with: "No result found", title: AlertConstants.alertTitle, successButtonTitle: AlertConstants.alertTitle)

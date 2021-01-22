@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAY-sB-hYL">
+                            <searchBar contentMode="redraw" placeholder="Enter Movie name eg: Marvel" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAY-sB-hYL">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -47,6 +47,7 @@
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Ekj-OH-zw2"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="LlR-IJ-y1m"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="1OW-SS-CdA"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -69,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54" y="40"/>
+            <point key="canvasLocation" x="53.623188405797109" y="39.508928571428569"/>
         </scene>
     </scenes>
     <resources>
